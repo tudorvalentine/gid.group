@@ -1,0 +1,17 @@
+@mixin font($name, $pathttf, $pathwoff, $pathwoff2, $style, $weight) {
+   @font-face {
+    font-family:$name;
+    src: $pathttf;
+    src: $pathwoff;
+    src: $pathwoff2;
+    font-style: $style;
+    font-weight: $weight;
+   }
+    
+}
+@mixin font-type($style , $weight , $size){
+   font-family: Roboto;
+   font-style: $style;
+   font-weight: $weight;
+   font-size: $size;
+}
