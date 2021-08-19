@@ -25,14 +25,13 @@
 	normal,
 	500
 	);
-
 @include font(
 	Poppins,
 	url(../fonts/Poppins-Regular.ttf),
 	url(../fonts/Poppins-Regular.woff),
 	url(../fonts/Poppins-Regular.woff2),
 	normal,
-	700
+	400
 	);
 
 @include font(
@@ -50,8 +49,55 @@
 	url(../fonts/Poppins-Medium.woff),
 	url(../fonts/Poppins-Medium.woff2),
 	normal,
-	700
+	500
 	);
+
+
+
+.features {
+	&__wrap-item{
+		background: #F2F2F2;
+		display: flex;
+		padding: 2em 3em;
+	}
+	/* .features__item */
+	&__item {
+		padding: 0 1em;
+		h3{
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 64px;
+			line-height: 75px;
+		@media only screen and (max-width:1600px) {
+				font-size: 54px !important;
+			}
+		}
+		p{
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 18px;
+			line-height: 21px;
+			@media only screen and (max-width:1600px) {
+				font-size: 14px !important;
+			}
+		}
+		strong{
+			font-family: Roboto;
+			font-style: normal;
+			font-weight:bold;
+			font-size: 28px;
+			line-height: 33px;
+			@media only screen and (max-width:1600px) {
+				font-size: 20px !important;
+			}
+		}
+	}
+}
+
+
+
 
 label{
  display:flex;
@@ -256,4 +302,5 @@ background: rgba(19, 19, 19, 0.9) !important;
 	margin-top: 100px;
 	text-align: center;
 }
+
 
