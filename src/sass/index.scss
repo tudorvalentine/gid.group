@@ -162,10 +162,6 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
 background: rgba(19, 19, 19, 0.9) !important;
 }
 
-.bg1{
-	background-image:url("../img/bg1.png");
-}
-
 .call{
 	margin-right: 38px;
 }
@@ -174,11 +170,15 @@ background: rgba(19, 19, 19, 0.9) !important;
 	margin-left: 38px;
 }
 
-
+.collapse-wrap{
+	position: absolute;
+	left: 0;
+	right: 0;
+}
 .collapse{
-
-
-
+	position: relative;
+	right: 0;
+	left: 0;
 	&__link{
 		padding: 15px 80px;
 		text-decoration: none;
@@ -192,7 +192,7 @@ background: rgba(19, 19, 19, 0.9) !important;
 		color: #F2F2F2;
 	}
 
-	a:hover{
+	&__link:hover{
 		color: #F2F2F2;
 	}
 }
@@ -217,86 +217,59 @@ background: rgba(19, 19, 19, 0.9) !important;
 	}
 }
 
-.txt{
-
-
-
-	&__logo{
-		position: absolute;
-		left: 866.21px;
-		top: 35px;
+.main-bg {
+	/* .main-bg_atachment */
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 990px;
+	z-index: -1;
+	&_atachment {
+		background: url('../img/bg1.png') no-repeat;
 	}
-
-	&__title{
-		font-family: Poppins;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 64px;
-		line-height: 96px;
-		color: #FFFFFF;
-
-		span{
-			font-size: 24px;
-			line-height: 36px;
-		}
-
-	}
-
-	&__subtitle{
-		font-family: Roboto;
-		font-style: normal;
-		font-size: 80px;
-		line-height: 94px;
-		text-align: center;
-		color: #F2F2F2;
-		margin-top: 347px;
-	}
-
 }
 
-.wrap-btn {
- 	
-	display: flex;
-	justify-content: center;
-
-	p{
+.remont {
+	/* .remont__btn */
+	&__btn {
+		margin-top: 83%;
 		font-family: Roboto;
 		font-style: normal;
 		font-weight: 300;
 		font-size: 24px;
 		line-height: 28px;
-		text-align: center;
-		color: #FFFFFF;
-		margin-top: 23px;
-	}
-
-	a{
 		text-decoration: none;
-	}
-
-	&__btn {
-		width: 348px;
-		height: 77px;
+		color: white;
+		padding: 15px 0;
+		display:flex;
+		width: 100%;
 		background: rgba(17, 17, 17, 0.6);
 		border: 1px solid #C4C4C4;
-		
+		transition: background .5s ease-out;
+		span{
+			text-align: center;
+			margin: 0 auto;
+		}
+	}
+	&__btn:hover{
+		color: white;
+		background: rgba(0, 0, 0, 1);
 	}
 
-	&__btn:hover {
-		background: rgba(19, 19, 19, 0.9);
-	
+	/* .remont__subtitle */
+	&__subtitle {
+		margin-top: 55%;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 80px;
+		line-height: 94px;
+		color: #F2F2F2;
 	}
 
-	&__btn-btn1 {
-		margin-right: 25px;
-		margin-top: 193px;
-	}
-
-	&__btn-btn2 {
-		margin-left: 25px;
-		margin-top: 193px;
-	}
 }
+
 
 .arrow{
 	margin-top: 100px;
